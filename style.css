@@ -15,17 +15,20 @@
     justify-content: space-between;
     border-bottom: solid #222222 5px; 
     height: var(--header-height);
+    background: white;
 }
 
 #header-logo {
     display: flex;
     align-items: center;
-    width: 25vw;
-    justify-content: space-evenly;
+    max-width: 50%;
+    width: 500px;
+    justify-content: flex-start;
 }
 #header-img {
     max-width: 100px;
     height: auto;
+    margin: 0 5% 0 3%;
 }
 
 #header-name {
@@ -39,11 +42,12 @@
     width: 35vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-#nav-bar ul li {
+li {
     list-style: none;
+    padding-right: 30px;
 }
 
 #nav-bar ul li a {
@@ -86,6 +90,35 @@ form input[type='submit'] {
     height: 30px;
     margin: 15px 25%; 
     background-color: #f1c40f; 
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon-container {
+    margin: 20px 10px;
+    justify-content: center;
+    align-content: center;
+}
+.icon-container img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.info-container {
+    align-content: center;
+    justify-content: center;
+}
+
+.info-container h1, .info-container p{
+    max-width: 100%;
+    height: auto;
 }
 
 iframe {
@@ -93,10 +126,111 @@ iframe {
     height: 315px;
 }
 
-#video {
+.video-container {
     align-items: center;
     justify-content: center;
     text-align: center;
     height: auto;
     width: 100%;
+    margin: 20px;
 }
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(60% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: white;
+}   
+
+.product > .level {
+    background-color:rgb(1, 122, 122);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > img {
+    max-width: 200px;
+    height: auto;
+}
+
+.product > .btn > a {
+    border: 0;
+    margin: 15px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: #ddd;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+    align-content: center;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 15px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    #header-name {
+        font-size: 20px;
+    }
+
+    .product > .level {
+        height: 66px;
+    }
+
+    .product > img {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+
+media -> emune bar and shop

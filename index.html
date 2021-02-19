@@ -12,28 +12,83 @@
 <body>
     <div id="header">
         <div id="header-logo">
-            <img id="header-img" src="./logo-img.PNG" alt="E-Mune Bar Logo">
+            <img id="header-img" src="https://i.imgur.com/o6BX597.png" alt="E-Mune Bar Logo">
             <div id="header-name">E-Mune Bar</div>
         </div>
-        <div id="nav-bar">
+        <nav id="nav-bar">
             <ul>
-                <li><a class=nav-link href="index.html">Home</a></li>
-                <li><a class=nav-link href="http://">Categories</a></li>
-                <li><a class=nav-link href="https://l.instagram.com/?u=http%3A%2F%2Fwww.tokopedia.com%2Femunebar&e=ATNruK1sgHK20Te9RAe1qU0_m1PoDcP-eHuHS57adWz10bej9apg-578WUuU-gZ-Vjd4vRhQQUKD5I6KXLntYQ&s=1">Shop</a></li>
-                <li><a class=nav-link href="http:// ">Contact</a></li>
+                <li><a class=nav-link href="#home">Home</a></li>
+                <li><a class=nav-link href="#features">Features</a></li>
+                <li><a class=nav-link href="#video">Benefits</a></li>
+                <li><a class=nav-link href="#pricing">Shop</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
-    <div class="banner">
+    <div class="banner" id="home">
         <h1>Daily supplements to boost up your E-Mune!</h1>
         <h3>Selling variations of Vitamin and General Medication</h3>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" placeholder="Enter your email address" required>
-            <input type="submit" id="submit" value="GET NOTIFIED">
-        </form>
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+            <input id="submit" type="submit" value="Get Notified" class="btn">
+          </form>
     </div>
-    <div id="video">
-        <iframe src="https://www.youtube.com/embed/5Z2fXbJmhbM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container" id="features">
+        <div class="icon-container">
+            <img src="https://img.icons8.com/?id=MxuFI0nM58Ui&size=2x&color=000000" alt="cheaper-money-icon">
+        </div>
+        <div class="info-container">
+            <h1>Reasonable Price</h1>
+            <p>Our products provide you with the most affordable price ever. Subscribe to our newsletter to receive our latest discounts.</p>
+        </div>
     </div>
+    <div class="container">
+        <div class="icon-container">
+            <img src="https://img.icons8.com/?id=Lt9swTmrH6AE&size=2x&color=000000" alt="fast-shipping icon">
+        </div>
+        <div class="info-container">
+            <h1>Fast Shipping</h1>
+            <p>We make sure you receive your orders as soon as the time you ordered. We also provide free shipping for some locations.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="icon-container">
+            <img src="https://img.icons8.com/?id=44458&size=2x&color=000000" alt="fast-shipping icon">
+        </div>
+        <div class="info-container">
+            <h1>Quality Assurance</h1>
+            <p>We make sure the authenticity in all of our listed products. We will also make sure there is no expired product being sold.</p>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/5Z2fXbJmhbM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <section id="pricing">
+        <div class="product">
+          <div class="level">Vitamin C</div>
+          <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/MTA-1464173/blackmores_blackmores-vitamin-c-500mg-suplemen-kesehatan--60-tab-_full03.jpg" alt="">
+          <h2>$10</h2>
+          <button class="btn"><a href="https://www.tokopedia.com/emunebar/blackmores-vitamin-c">BUY</a></button>
+        </div>
+        <div class="product">
+            <div class="level">Multivitamin and minerals</div>
+            <img src="https://hdmall.id/system/image_attachments/images/000/003/178/medium/blackmores-multivitamin-dan-minerals-tab-120s-btl-1.jpg" alt="">
+            <h2>$10</h2>
+            <button class="btn"><a href="https://www.tokopedia.com/emunebar/blackmores-multivitamin-minerals">BUY</a></button>
+          </div>
+        <div class="product">
+          <div class="level">Omega-3</div>
+          <img src="https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/catalog/product/o/d/od-fish-oil-_200_-id_4.jpg" alt="">
+          <h2>$25</h2>
+          <button class="btn"><a href="https://www.tokopedia.com/emunebar/blackmores-odourless-fish-oil-isi-200">BUY</a></button>
+        </div>
+    </section>
+    <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2021, E-Mune Bar</span>
+      </footer>
 </body>
 </html>
